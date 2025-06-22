@@ -527,25 +527,16 @@ body {
 /* ============================ */
 
 @media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding-bottom: 50px;
+  .photo-wrapper::before {
+    /* Ajuste estes valores para mudar o efeito no mobile */
+    width: 300px;         /* Tamanho menor do círculo */
+    height: 300px;
+    top: 50%;             /* Centraliza verticalmente */
+    left: 50%;            /* Centraliza horizontalmente */
+    opacity: 0.4;         /* Deixa mais transparente */
+    background: radial-gradient(circle, var(--accent-color) 15%, transparent 60%);
   }
-  .intro {
-    margin: 100px auto 0 auto;
-    text-align: center;
-    padding: 0 20px;
-    width: 90%;
-  }
-  .profile-photo {
-    order: 2;
-    margin: 30px auto;
-    width: 100%;
-  }
-  .photo-wrapper {
-    width: 200px;
-    height: 200px;
-  }
+}
   /* AJUSTE ESPECÍFICO PARA O EFEITO NO MOBILE */
   .photo-wrapper::before {
     width: 120%; /* Efeito mais contido */
