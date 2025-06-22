@@ -533,7 +533,7 @@ body {
 
 
 
-@media (max-width: 1068px) {
+@media (max-width: 1475px) {
   .hero {
     flex-direction: column;
     padding-bottom: 50px;
@@ -551,14 +551,14 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  margin-top: 6rem;
+  margin-top: 10rem;
   flex-wrap: wrap;
   
 }
 
   .profile-photo {
     order: 2;
-    margin-top: 3rem;
+    margin-top: 10rem;
     margin: 30px auto;
     width: 100%;
     top: 120%;             /* Centraliza verticalmente */
