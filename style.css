@@ -89,6 +89,8 @@ body {
   margin-left: 200px;
   margin-top: 200px;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 .hello {
@@ -134,9 +136,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   color: var(--text-color);
-  
   margin-top: 6px;
-  
 }
 
 /* ============================ */
