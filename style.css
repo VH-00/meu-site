@@ -51,6 +51,15 @@ body {
   background-color: var(--conteiner-color);
 }
 
+.container_apresentacao {
+  max-width: 1500px;
+  margin: 50px auto;
+  padding: 0 20px;
+  border-radius: 20px;
+  background-color: var(--bg-color);
+  margin-bottom: 2rem;
+}
+
 /* ============================ */
 /* TOPO DO SITE / HEADER       */
 /* ============================ */
@@ -132,7 +141,16 @@ body {
   margin-top: 1rem;
 }
 
-.intro .apresentacao {
+.apresentacao {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text-color);
+  margin: 0 auto 5rem auto;
+  margin-top: 6px;
+  
+}
+
+.apresentacaoF {
   font-size: 2rem;
   font-weight: 400;
   color: var(--text-color);
@@ -219,8 +237,8 @@ body {
   border: none;
   box-shadow: none;
   transition: transform 0.3s ease;
-  margin-left: -190px;
-  margin-top: 164px;
+  top: 30%;             /* Centraliza verticalmente */
+  left: 100%;
 }
 
 .profile-photo img:hover {
@@ -236,8 +254,8 @@ body {
 .photo-wrapper::before {
   content: '';
   position: absolute;
-  top: 60%;
-  left: 40%;
+  top: 60%;             /* Centraliza verticalmente */
+  left: 140%;
   transform: translate(-50%, -50%);
   width: 680px;
   height: 680px;
@@ -538,6 +556,17 @@ body {
     flex-direction: column;
     padding-bottom: 50px;
   }
+
+  .hello {
+    font-size: 2.9rem;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 50px;
+    color: var(--text-color);
+    position: static;
+    display: inline-block;
+  }
+
   .intro {
     margin: 100px auto 0 auto;
     text-align: center;
@@ -545,31 +574,52 @@ body {
     width: 90%;
   }
 
-  .skills-bar {
-  background-color: var(--bg-secondary);
-  padding: 1rem 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  margin-top: 10rem;
-  flex-wrap: wrap;
-  
-}
-
-  .profile-photo {
-    order: 2;
-    margin-top: 10rem;
-    margin: 30px auto;
-    width: 100%;
-    top: 120%;             /* Centraliza verticalmente */
-    left: 100%;
+  .cta-buttons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    gap: 1rem;
 
   }
+
+  .apresentacaoF {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0 auto 9rem auto;
+    margin-top: 6px;
+    
+  }
+  .skills-bar {
+    background-color: var(--bg-secondary);
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    justify-content: center;
+    margin-top: 10rem;
+    flex-wrap: wrap;
+    width: 100%;
+  
+  }
+  
+  .profile-photo {
+    order: 2;
+    margin-top: 1rem;
+    margin: 30px auto;
+    width: 100%;
+    top: 88%;             /* Centraliza verticalmente */
+    left: -78%;
+    position: absolute;
+    z-index: 2;
+    
+  }
   .photo-wrapper {
-    width: 50vw;
-    height: 50vw;
+    width: 45vw;
+    height: 45vw;
     top: 65%;             /* Centraliza verticalmente */
     left: 68%;
+    position: absolute;
+    z-index: 1;
   }
 
   /* AJUSTE ESPECÍFICO PARA O EFEITO NO MOBILE */
@@ -578,15 +628,10 @@ body {
     height: 65vw;
     opacity: 0.3;         /* Mais transparente */
     background: radial-gradient(circle, var(--accent-color) 10%, transparent 70%);
-    top: 120%;             /* Centraliza verticalmente */
-    left: 50%; 
-    
-    /* Efeito extra para mobile */
-    box-shadow: 0 0 30px rgba(196, 60, 60, 0.2);
+    top: 88%;             /* Centraliza verticalmente */
+    left: -78%;
+    box-shadow: var(--accent-color);
   }
-  /* Remove margens específicas dos textos */
-  .hello, .name {
-    margin-left: 0 !important;
-  }
+  
 }
 
