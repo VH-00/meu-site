@@ -623,8 +623,8 @@ body {
     width: 100%;
     position: relative;
     z-index: 2;
-    transform: translateY(110%); /* Funciona com base na própria altura */
-    transform: translateX(-90%);
+    transform: translateY(100%); /* Funciona com base na própria altura */
+    transform: translateX(-10%);
   }
 
   
