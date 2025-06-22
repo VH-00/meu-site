@@ -136,7 +136,9 @@ body {
   font-size: 2rem;
   font-weight: 400;
   color: var(--text-color);
+  margin: 0 auto 5rem auto;
   margin-top: 6px;
+  
 }
 
 /* ============================ */
@@ -264,8 +266,10 @@ body {
 
 .cta-buttons {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   gap: 1rem;
+
 }
 
 .btn-primary, .btn-secondary {
@@ -346,6 +350,7 @@ body {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  
 }
 
 
@@ -526,7 +531,9 @@ body {
 /* RESPONSIVIDADE              */
 /* ============================ */
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 1068px) {
   .hero {
     flex-direction: column;
     padding-bottom: 50px;
@@ -537,12 +544,25 @@ body {
     padding: 0 20px;
     width: 90%;
   }
+
+  .skills-bar {
+  background-color: var(--bg-secondary);
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-top: 6rem;
+  flex-wrap: wrap;
+  
+}
+
   .profile-photo {
     order: 2;
+    margin-top: 3rem;
     margin: 30px auto;
     width: 100%;
     top: 120%;             /* Centraliza verticalmente */
-    left: 90%;
+    left: 100%;
 
   }
   .photo-wrapper {
