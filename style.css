@@ -541,22 +541,32 @@ body {
     order: 2;
     margin: 30px auto;
     width: 100%;
+    top: 120%;             /* Centraliza verticalmente */
+    left: 90%;
+
   }
   .photo-wrapper {
     width: 200px;
     height: 200px;
+    top: 65%;             /* Centraliza verticalmente */
+    left: 68%;
   }
+
   /* AJUSTE ESPECÍFICO PARA O EFEITO NO MOBILE */
   .photo-wrapper::before {
-    width: 400px;         /* Tamanho menor do círculo */
-    height: 400px;
-    top: 90%;             /* Centraliza verticalmente */
-    left: 10%;            /* Centraliza horizontalmente */
-    opacity: 0.4;         /* Deixa mais transparente */
-    background: radial-gradient(circle, var(--accent-color) 15%, transparent 60%);
+    width: 65vw;          /* Relativo à largura da tela */
+    height: 65vw;
+    opacity: 0.3;         /* Mais transparente */
+    background: radial-gradient(circle, var(--accent-color) 10%, transparent 70%);
+    top: 120%;             /* Centraliza verticalmente */
+    left: 50%; 
+    
+    /* Efeito extra para mobile */
+    box-shadow: 0 0 30px rgba(196, 60, 60, 0.2);
   }
   /* Remove margens específicas dos textos */
   .hello, .name {
     margin-left: 0 !important;
   }
 }
+
