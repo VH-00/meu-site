@@ -621,8 +621,8 @@ body {
     margin-top: 1rem;
     margin: 30px auto;
     width: 100%;
-    top: 100%;             /* Centraliza verticalmente */
-    left: -82%;
+    top: 120%;             /* Centraliza verticalmente */
+    left: -89%;
     position: absolute;
     z-index: 2;
     
