@@ -7,59 +7,63 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+<header class="hero">
+
+  <section class="topo-site">
+    <nav class="nav-desktop">
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <button id="menu-toggle" class="menu-icon" aria-label="Abrir menu">☰</button>
+
+    <nav class="nav-mobile" id="nav-mobile">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" aria-label="Alternar tema">🌓</button>
+  </section>
+
+  <div class="intro">
+    <p class="hello">Olá<span class="dot">.</span></p>
+    <p class="name">Sou <span>Vitor</span></p>
+    <h1 class="role">Desenvolvedor Júnior</h1>
+
+    <div class="container_apresentacao">
+
+      <div class="cta-buttons">
+        <a href="#contato" class="btn-primary">Se interessou?</a>
+        <a href="imgs/curriculo.pdf" class="btn-secondary">Meu currículo</a>
+      </div>
+
+    
+      <p class="apresetacao">Sou desenvolvedor Junior, apaixonado pela criação de interfaces funcionais e atraentes,</p>
+      <p class="apresetacao">estou sempre em busca de aprender novas tecnologias para aprimorar minhas habilidades.</p>
+      <p class="apresetacao">Atualmente, estou em busca de oportunidades para crescer profissionalmente,</p>
+      <p class="apresetacaoF">agregar valor a projetos inovadores e colaborar em equipes dinâmicas.</p>
     
 
-          <section class="topo-site">
-            <nav class="nav-desktop">
-              <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
-              </ul>
-            </nav>
+      <section class="profile-photo">
+        <div class="photo-wrapper">
+          <img src="imgs/perfil.png" alt="Foto de Vitor Hugo Leal Marques" />
+        </div>
+      </section>
+    </div>
 
-            <button id="menu-toggle" class="menu-icon" aria-label="Abrir menu">☰</button>
+  </div>
 
-            <nav class="nav-mobile" id="nav-mobile">
-              <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
-              </ul>
-            </nav>
 
-            <button id="theme-toggle" aria-label="Alternar tema">🌓</button>
-          </section>
+</header>
 
-          <div class="intro">
-            <p class="hello">Olá<span class="dot">.</span></p>
-            <p class="name">Sou <span>Vitor</span></p>
-            <h1 class="role">Desenvolvedor Júnior</h1>
-          
-            <div class="cta-buttons" >
-              <a href="#contato" class="btn-primary">Se interessou?</a>
-              <a href="imgs/curriculo.pdf" class="btn-secondary">Meu currículo</a>
-            </div>
-            
-            <p class="apresetacao"> Sou desenvolvedor Junior, apaixonado pela criação de interfaces funcionais e atraentes,  </p>
-            <p class="apresetacao">estou sempre em busca de aprender novas tecnologias para aprimorar minhas habilidades. </p>
-            <p class="apresetacao">Atualmente, estou em busca de oportunidades para crescer profissionalmente, </p>
-            <p class="apresetacao">agregar valor a projetos inovadores e colaborar em equipes dinâmicas.</p>
-
-          </div>
-
-            <section class="profile-photo">
-              <div class="photo-wrapper">
-              <img src="imgs/perfil.png" alt="Foto de Vitor Hugo Leal Marques" />  
-              </div>
-            </section>
-          
-
-            
-  </header>
   <main>
 
   <div class="skills-bar">
@@ -89,7 +93,7 @@
   </div>
 
 
-    <section id="projects" class="section container_project">
+    <section id="projects" class="section container_content">
       <h2>Projetos</h2>
       <div class="projects-list" style="display:flex; flex-wrap: wrap;">
         <!-- Projetos carregados via JS -->
