@@ -621,12 +621,13 @@ body {
     margin-top: 1rem;
     margin: 30px auto;
     width: 100%;
-    top: 120%;             /* Centraliza verticalmente */
-    left: -89%;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    
+    transform: translateY(100%); /* Funciona com base na própria altura */
+    transform: translateX(-120%);
   }
+
+  
   .photo-wrapper {
     width: 45vw;
     height: 45vw;
