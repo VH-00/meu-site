@@ -632,7 +632,7 @@ body {
     width: 45vw;
     height: 45vw;
     top: 65%;             /* Centraliza verticalmente */
-    left: 0%;
+    left: -20%;
     position: absolute;
     z-index: 1;
   }
