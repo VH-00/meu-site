@@ -632,7 +632,8 @@ body {
     width: 60vw;
     height: 60vw;
     top: 50%;             /* Centraliza verticalmente */
-    left: -1.5rem;
+    margin-left: auto;
+    margin-right: auto;
     position: absolute;
     z-index: 1;
   }
