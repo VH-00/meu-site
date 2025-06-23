@@ -631,8 +631,8 @@ body {
   .photo-wrapper {
     width: 45vw;
     height: 45vw;
-    top: 65%;             /* Centraliza verticalmente */
-    left: -2rem;
+    top: 50%;             /* Centraliza verticalmente */
+    left: -1.75rem;
     position: absolute;
     z-index: 1;
   }
